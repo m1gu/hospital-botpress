@@ -9,7 +9,7 @@ from data import (
 from models import Medico, SlotHorario, DisponibilidadResponse
 
 app = FastAPI(
-    title="Hospital Digital Salud — API de Disponibilidad",
+    title="Hospital Digital — API de Disponibilidad",
     description="API para consultar especialidades, médicos y horarios disponibles.",
     version="1.0.0",
 )
@@ -21,7 +21,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Mapa de nombre de día en español
 DIAS_SEMANA = {
     0: "lunes", 1: "martes", 2: "miércoles",
     3: "jueves", 4: "viernes", 5: "sábado", 6: "domingo"

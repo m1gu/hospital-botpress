@@ -12,7 +12,6 @@ HOSPITAL = {
 
 ESPECIALIDADES = ["Cardiología", "Pediatría", "Dermatología"]
 
-# Cada médico tiene días asignados y horarios
 MEDICOS = [
     {
         "id": 1,
@@ -52,7 +51,6 @@ MEDICOS = [
     },
 ]
 
-# Slots horarios disponibles (cada 30 min de 8:00 a 18:00)
 HORARIOS_BASE = [
     "08:00", "08:30", "09:00", "09:30", "10:00", "10:30",
     "11:00", "11:30", "12:00", "12:30", "13:00", "13:30",
@@ -60,7 +58,6 @@ HORARIOS_BASE = [
     "17:00", "17:30",
 ]
 
-# Citas ya agendadas (simuladas) — para que no todo aparezca disponible
 CITAS_OCUPADAS = {
     "Dr. García": {
         "2026-02-25": ["09:00", "10:00", "14:00"],
